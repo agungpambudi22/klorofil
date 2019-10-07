@@ -1,0 +1,10 @@
+cara install
+
+composer install
+npm install && npm run dev /*Instal node.js first*/
+php artisan key:generate
+buat database
+php artisan migrate
+php artisan db:seed
+
+https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
