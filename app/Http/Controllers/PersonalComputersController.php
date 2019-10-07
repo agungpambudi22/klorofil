@@ -14,7 +14,7 @@ class PersonalComputersController extends Controller
      */
     public function index()
     {
-        $arr['personal_computers'] = PersonalComputer::paginate(5);
+        $arr['personal_computers'] = PersonalComputer::paginate(10);
         return view('pc')->with($arr);
     }
 
