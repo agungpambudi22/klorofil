@@ -7,6 +7,10 @@
 </div>
 
 <div class="panel-body">
+  <a href="{{route('pc.create')}}"><button type="button" class="btn btn-primary">Add</button></a>
+</div>
+
+<div class="panel-body">
 	<div class="panel-body">
 		<table class="table table-striped">
 			<thead>
@@ -54,5 +58,5 @@
 		{{$personal_computers->render()}}
 	</div>
 </div>
-                        
+
 @endsection

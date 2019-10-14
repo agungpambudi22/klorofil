@@ -25,7 +25,7 @@ class PersonalComputersController extends Controller
      */
     public function create()
     {
-        //
+        return view('addpc');
     }
 
     /**
