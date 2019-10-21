@@ -20,6 +20,9 @@
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('assets/img/apple-icon.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/favicon.png')}}">
+    <!-- SELECT TAIL -->
+    <!-- <link type="text/css" rel="stylesheet" href="{{asset('css/app.css')}}" /> -->
+    <link type="text/css" rel="stylesheet" href="{{asset('css/tail.select-default.css')}}" />
 </head>
 
 <body>
@@ -108,6 +111,23 @@
     <script src="{{asset('assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
     <script src="{{asset('assets/vendor/chartist/js/chartist.min.js')}}"></script>
     <script src="{{asset('assets/scripts/klorofil-common.js')}}"></script>
+
+    <!-- Javascript Select Tail -->
+      <script src="{{asset('js/jquery-3.4.1.slim.js')}}"></script>
+      <script src="{{asset('js/popper.min.js')}}"></script>
+      <script src="{{asset('js/tail.select-full.min.js')}}"></script>
+      <script>
+        tail.select('#select1', {
+          search : true,
+          deselect : true,
+          placeholder : "Pilih Pengguna Komputer"
+        })
+        tail.select('#select2', {
+          search : true
+        })
+      </script>
+    <!-- End Of Javascript Select Tail -->
+
     <script>
     $(function() {
         var data, options;
